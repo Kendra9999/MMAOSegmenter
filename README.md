@@ -24,8 +24,8 @@ Derong Yu, Guoyan Zheng
 
 ### Install
 ```
-conda create -n ReSeg python=3.10.16
-conda activate ReSeg
+conda create -n MMAOSegmenter python=3.10.16
+conda activate MMAOSegmenter
 pip install -r requirements.txt
 git clone https://github.com/Kendra9999/ReSeg.git
 ```

@@ -1,4 +1,4 @@
-# ReSeg: Retraining-free segmentation of abdominal organs via generalizable semantic representation learning
+# MMAOSegmenter: Retraining-free segmentation of multi-modality abdominal organs via generalizable semantic representation learning
 
 Derong Yu, Guoyan Zheng
 
@@ -105,23 +105,23 @@ The synthetic data structure are as follows:
 ```
 
 ### Training
-We use WANDB to log the training process. Please log in your WANDB account and write your entity name in `ReSeg/configs/rep/rep.py` and `ReSeg/configs/seg/zs_seg_abd4.py`.
+We use WANDB to log the training process. Please log in your WANDB account and write your entity name in `MMAOSegmenter/configs/rep/rep.py` and `MMAOSegmenter/configs/seg/zs_seg_abd4.py`.
 
 #### Representation learning
 Write your synthetic data directory path in `ReSeg/configs/rep/rep.py`.
 
 Run the following command to train the model:
 ```
-cd ReSeg/tools
+cd MMAOSegmenter/tools
 CUDA_VISIBLE_DEVICES=0 python train.py configs/rep/rep.py --auto-resume --no-validate
 ```
 
 #### Segmentation training
-Write your synthetic data directory path and the pretrained checkpoint path in `ReSeg/configs/seg/zs_seg_abd4.py`.
+Write your synthetic data directory path and the pretrained checkpoint path in `MMAOSegmenter/configs/seg/zs_seg_abd4.py`.
 
 Run the following command to train the model:
 ```
-cd ReSeg/tools
+cd MMAOSegmenter/tools
 CUDA_VISIBLE_DEVICES=0 python train_seg.py configs/seg/zs_seg_abd4.py --auto-resume --no-validate
 ```
 
@@ -130,7 +130,7 @@ CUDA_VISIBLE_DEVICES=0 python train_seg.py configs/seg/zs_seg_abd4.py --auto-res
 #### Demo 
 Prepare an image file, and run the following command for segmentation:
 ```
-cd ReSeg/downstream/segment
+cd MMAOSegmenter/downstream/segment
 
 python demo.py \
   --checkpoint /path/to/checkpoint.pth \

@@ -1,4 +1,4 @@
-# MMAOSegmenter: Retraining-free segmentation of multi-modality abdominal organs via generalizable semantic representation learning
+# MMAOSegmenter: Retraining-free multi-modality abdominal organ segmentation via generalizable semantic representation learning
 
 Derong Yu, Guoyan Zheng
 

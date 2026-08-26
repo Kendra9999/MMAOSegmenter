@@ -27,7 +27,7 @@ Derong Yu, Guoyan Zheng
 conda create -n MMAOSegmenter python=3.10.16
 conda activate MMAOSegmenter
 pip install -r requirements.txt
-git clone https://github.com/Kendra9999/ReSeg.git
+git clone https://github.com/Kendra9999/MMAOSegmenter.git
 ```
 We use [mmcv](https://github.com/open-mmlab/mmcv) and [mmdet](https://github.com/open-mmlab/mmdetection).
 ```

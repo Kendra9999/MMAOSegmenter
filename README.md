@@ -108,7 +108,7 @@ The synthetic data structure are as follows:
 We use WANDB to log the training process. Please log in your WANDB account and write your entity name in `MMAOSegmenter/configs/rep/rep.py` and `MMAOSegmenter/configs/seg/zs_seg_abd4.py`.
 
 #### Representation learning
-Write your synthetic data directory path in `ReSeg/configs/rep/rep.py`.
+Write your synthetic data directory path in `MMAOSegmenter/configs/rep/rep.py`.
 
 Run the following command to train the model:
 ```
